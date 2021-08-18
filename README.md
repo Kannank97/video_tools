@@ -1,1 +1,1 @@
-# video_tools
+# A set of tools for making your life easy while working with video files
