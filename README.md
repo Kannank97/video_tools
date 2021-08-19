@@ -1,4 +1,4 @@
-<img src="../logo/../video_tools/logo/easy_editor_logo.png" height=100 width=100>
+<img src="./logo/easy_editor_logo.png" height=100 width=100>
 
 Easy Editor is a tool for video modification.
 
