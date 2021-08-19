@@ -27,7 +27,7 @@ def run_subprocess(command):
 
 # main group
 @click.group(cls=AliasedGroup, invoke_without_command=True)
-@click.option('--version', '-v', required=True, is_flag=True, help='Version details')
+@click.option('--version', '-v', required=False, is_flag=True, help='Version details')
 def easy_edit_main(version):
     
     click.secho(r'''
@@ -37,7 +37,7 @@ def easy_edit_main(version):
 /  __/ /_/ (__  ) /_/ /  /  __/ /_/ / / /_/ /_/ / /
 \___/\__,_/____/\__, /   \___/\__,_/_/\__/\____/_/
                /____/
-
+s
     ''', fg='green', bold=True)
     if version:
         click.secho('Version 0.1.0')
