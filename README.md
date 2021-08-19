@@ -1,13 +1,16 @@
 <img src="./logo/easy_editor_logo.png" height=100 width=100>
 
-Easy Editor is a tool for video modification.
+# Easy Editor
 
-### This tool requires `ffmpeg` to be installed on your machine. [will be updated]
-
-Refer [this page]() for installing on Windows or refer [this page]() for installing on ubuntu.
+Easy Editor is a python based tool for video editing.
 
 ## Using the easy editor
 
+### Commands
+
+| Commands | Description |
+| ---- | ---- |
+| [`play`](#play) | Play any video files | 
 ### **`play`**
 
 To play any video using `easy editor`, use the command `play`
