@@ -1,13 +1,6 @@
-# Easy Editor: A python based CLI for all your video edit tasks
+# [logo]
 
-```js
-                                     ___ __
-  ___  ____ ________  __   ___  ____/ (_) /_____  _____
- / _ \/ __ `/ ___/ / / /  / _ \/ __  / / __/ __ \/ ___/
-/  __/ /_/ (__  ) /_/ /  /  __/ /_/ / / /_/ /_/ / /
-\___/\__,_/____/\__, /   \___/\__,_/_/\__/\____/_/
-               /____/
-```
+Easy Editor is a tool for video modification.
 
 ### This tool requires `ffmpeg` to be installed on your machine. [will be updated]
 
