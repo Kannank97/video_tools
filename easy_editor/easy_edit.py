@@ -46,22 +46,11 @@ def easy_edit_main(version):
     )
     if version:
         click.secho("Version 0.1.0")
-    else:
-        click.secho(
-            r"""
-Usage: easy_edit.py [OPTIONS] COMMAND [ARGS]...
-
-Options:
-  -v, --version  Version details  [required]
-  --help         Show this message and exit.
-
-Commands:
-  play  Play your videos with easy editor
-        """
-        )
 
 
-@easy_edit_main.command(name="play", help="Play your videos with easy editor")
+@easy_edit_main.command(
+    name="play", help="Play your videos with easy editor. Press `ctrl+c to quit playing"
+)
 @click.option(
     "--input",
     "-i",
@@ -80,6 +69,7 @@ def play(input, input_file):
     --help       Show this message and exit.
     """
     if input:
+        click.secho(f"Playing video: {input_file}...", fg="green")
         command = ["ffplay", "-i", input_file]
         result = run_subprocess(command)
         if result.stderr:
