@@ -26,7 +26,7 @@ def run_subprocess(command):
     """
     result = subprocess.run(command,
                             capture_output=True, text=True
-                        )
+                           )
     return result
 
 
