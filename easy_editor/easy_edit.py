@@ -1,6 +1,8 @@
-from types import resolve_bases
-import click
 import subprocess
+from types import resolve_bases
+
+import click
+
 
 class AliasedGroup(click.Group):
     """Class to add aliases to the commands"""
@@ -10,6 +12,7 @@ class AliasedGroup(click.Group):
         except KeyError:
             pass
         return super().get_command(ctx, cmd_name)
+
 
 def run_subprocess(command):
     """Run commands as a subprocess using subprocess
@@ -72,7 +75,6 @@ def play(input, input_file):
         if result.stderr:
             error_msg = f'Error while playing video {input_file}'
             click.secho(error_msg, fg="red", bold=True)
-
 
 
 # list of alias commands
