@@ -13,14 +13,14 @@ class AliasedGroup(click.Group):
 
 def run_subprocess(command):
     """Run commands as a subprocess using subprocess
-    
+
     Args:
         command: list
-    
+
     Returns:
         result: subprocess result object
     """
-    result = subprocess.run(command, 
+    result = subprocess.run(command,
                             capture_output=True, text=True
                         )
     return result
@@ -29,7 +29,7 @@ def run_subprocess(command):
 @click.group(cls=AliasedGroup, invoke_without_command=True)
 @click.option('--version', '-v', required=False, is_flag=True, help='Version details')
 def easy_edit_main(version):
-    
+
     click.secho(r'''
                                      ___ __
   ___  ____ ________  __   ___  ____/ (_) /_____  _____
@@ -59,7 +59,7 @@ Commands:
 @click.argument('input_file', nargs=1, required=True)
 def play(input, input_file):
     """Play your videos with easy editor
-    
+
     Usage: easy_edit.py play [OPTIONS] INPUT_FILE
 
     Options:
@@ -72,7 +72,7 @@ def play(input, input_file):
         if result.stderr:
             error_msg = f'Error while playing video {input_file}'
             click.secho(error_msg, fg="red", bold=True)
-    
+
 
 
 # list of alias commands
